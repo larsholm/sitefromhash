@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SiteFromHash</title>
+</head>
+<body>
+<script>
+let p = document.createElement("p");
+p.innerHTML = atob(window.location.hash.substring(1));
+document.body.appendChild(p);
+</script>
+</body>
+</html>
